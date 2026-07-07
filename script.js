@@ -108,7 +108,7 @@ arrowRight.addEventListener('click', () => {
 
 arrowLeft.addEventListener('click', () => {
     if (index > 1) {
-        index++;
+        index--;
         arrowRight.classList.remove('disabled');
     }
     else {
