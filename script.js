@@ -82,8 +82,7 @@ resumeBtns.forEach((btn, idx) => {
     });
 });
 
-const arrowRight = document.querySelector('.portfolio-box .navigation .arrow-right');
-const arrowLeft = document.querySelector('.portfolio-box .navigation .arrow-left');
+
 
 let index = 0;
 
@@ -93,6 +92,7 @@ const activePortfolio = () => {
     imgSlide.style.transform ='translateX(calc(${index * -100}%  - ${index * 2}rem))';
 }
 
+if (arrowRight && arrowLeft) {
 arrowRight.addEventListener('click', () => {
     if (index < 4) {
         index++;
@@ -118,3 +118,4 @@ arrowLeft.addEventListener('click', () => {
 
     activePortfolio();
 });
+}
