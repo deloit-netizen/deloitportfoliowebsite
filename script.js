@@ -85,6 +85,9 @@ resumeBtns.forEach((btn, idx) => {
 
 
 let index = 0;
+const arrowRight = document.querySelector('.portfolio-carousel + .navigation .arrow-right'); // or matching your structure
+const arrowLeft = document.querySelector('.portfolio-carousel + .navigation .arrow-left');
+
 
 const activePortfolio = () => {
     imgSlide.style.transform = `translateX(calc(${index * -100}% - ${index * 2}rem))`;
